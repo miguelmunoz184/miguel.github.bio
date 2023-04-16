@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./Logo.png">
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/4d92ced202.js" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="encriptar">
             <textarea id="texto" name="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"
-                oninput="soloMinusculas()"></textarea>
+                oninput="validarTexto()"></textarea>
         </div>
 
         <div class="terminos">
@@ -40,21 +40,21 @@
                 <h2>Ningun mensaje fue contrado</h2>
                 <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
             </div class="mostrar" styles="display: none">
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" oninput="validarTexto2()"></textarea>
             <input id="btn-copiar" type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
         </div>
     </div>
 
-    
-        <footer class="footer">
-            <h3>Pagina creada por Miguel Muñoz, Sigueme en redes :</h3>
-             <a href="https://github.com/miguelmunoz184?tab=repositories" target="_blank" ><i class="fa-brands fa-github fa-flip"></i></a>
-            <a href="https://www.linkedin.com/in/miguel-mu%C3%B1oz-126561246/" target=" _blank"
-                rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-flip"></i></a>
-    
+
+    <footer class="footer">
+        <h3>Pagina creada por Miguel Muñoz, Sigueme en redes :</h3>
+        <a href="https://github.com/miguelmunoz184?tab=repositories" target="_blank"><i
+                class="fa-brands fa-github fa-flip"></i></a>
+        <a href="https://www.linkedin.com/in/miguel-mu%C3%B1oz-126561246/" target=" _blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin fa-flip"></i></a>
+    </footer>
+
     <script src="./index.js"></script>
-
-
 </body>
 
 </html>

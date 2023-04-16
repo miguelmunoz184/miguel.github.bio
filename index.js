@@ -49,15 +49,22 @@ function copiar() {
       document.getElementById("btn-copiar").style.display = "block";
     }
   }
+
   
-  function soloMinusculas() {
-    let textarea = document.getElementById("texto");
-    let contenido = textarea.value;
-  
-    let contenidoSinCaracteres = contenido.replace(/[^a-zA-Z\s]/g, "");
-  
-    let contenidoEnMinusculas = contenidoSinCaracteres.toLowerCase();
-  
-    textarea.value = contenidoEnMinusculas;
+
+  function validarTexto() {
+    const textarea = document.getElementById("texto");
+    const textoValido = textarea.value.replace(/[^a-zñ0-9\s]/g, "");
+    textarea.value = textoValido;
   }
+  
+  function validarTexto2() {
+    const textarea = document.getElementById("mensaje");
+    const textoValido = textarea.value.replace(/[^a-zñ0-9\s]/g, "");
+    textarea.value = textoValido;
+  }
+
+  
+
+  
   

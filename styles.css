@@ -144,7 +144,8 @@
     left: 60%;
     top: 5%;
     background: #ffffff;
-    box-shadow: 0px 24px 32px -8px;
+    box-shadow: 0px 10px 30px -10px #0044ff ;
+
     border-radius: 24px;
   }
   
@@ -205,8 +206,9 @@
       background: #ffffff;
       border-radius: 25px;
       padding-left: 2%;
+      text-indent: 3%;
       outline: none;
-      box-shadow: 0px 24px 32px -8px;
+      box-shadow: 0px 24px 32px -8px  ;
       border-radius: 24px;
       display: none;
       color: #0a3871;
