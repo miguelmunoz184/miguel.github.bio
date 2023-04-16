@@ -15,7 +15,7 @@
 <body>
     <div class="container">
         <div class="encriptar">
-            <textarea id="texto" name="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"
+            <textarea id="texto" name="texto" class="texto" cols="30" rows="10" maxlength="350" placeholder="Ingresa el texto aquí"
                 oninput="validarTexto()"></textarea>
         </div>
 
@@ -39,22 +39,31 @@
             <div id="mensaje_encriptado" class="mensaje_encriptado">
                 <h2>Ningun mensaje fue contrado</h2>
                 <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
-            </div class="mostrar" styles="display: none">
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje" oninput="validarTexto2()"></textarea>
+            </div>
+        </div>
+
+        <div class="mostrar" id="mostrar" >
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"  maxlength="350" class="mensaje" oninput="validarTexto2()" placeholder=""></textarea>
             <input id="btn-copiar" type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
         </div>
+
+      
     </div>
 
-
-    <footer class="footer">
-        <h3>Pagina creada por Miguel Muñoz, Sigueme en redes :</h3>
-        <a href="https://github.com/miguelmunoz184?tab=repositories" target="_blank"><i
-                class="fa-brands fa-github fa-flip"></i></a>
-        <a href="https://www.linkedin.com/in/miguel-mu%C3%B1oz-126561246/" target=" _blank" rel="noopener noreferrer"><i
-                class="fa-brands fa-linkedin fa-flip"></i></a>
-    </footer>
+    <div class="div_footer">
+        <footer class="footer">
+            <h3>Pagina creada por Miguel Muñoz, Sigueme en redes :</h3>
+            <a href="https://github.com/miguelmunoz184?tab=repositories" target="_blank"><i
+                    class="fa-brands fa-github fa-flip"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-mu%C3%B1oz-126561246/" target=" _blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin fa-flip"></i></a>
+        </footer>
+    </div>
+    
 
     <script src="./index.js"></script>
 </body>
 
 </html>
+
+

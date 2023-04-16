@@ -11,6 +11,8 @@ function copiar() {
     if (copiar.lenght != 0) {
       document.getElementById("mensaje").style.display = "none";
       document.getElementById("btn-copiar").style.display = "none";
+      document.getElementById("mostrar").style.display = "none"
+
     }
   }
   
@@ -29,6 +31,7 @@ function copiar() {
       document.getElementById("mensaje").value = texto;
       document.getElementById("mensaje").style.display = "block";
       document.getElementById("btn-copiar").style.display = "block";
+      document.getElementById("mostrar").style.display = "block"
     }
   }
   
@@ -47,6 +50,8 @@ function copiar() {
       document.getElementById("mensaje").value = texto;
       document.getElementById("mensaje").style.display = "block";
       document.getElementById("btn-copiar").style.display = "block";
+      document.getElementById("mostrar").style.display = "block"
+
     }
   }
 
