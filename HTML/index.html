@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="icon" type="image/x-icon" href="/IMG/Logo-Pag.png">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <script src="https://kit.fontawesome.com/4d92ced202.js" crossorigin="anonymous"></script>
+    <title>Challenge- Alura Latam G5</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="encriptar">
+            <textarea id="texto" name="texto" class="texto" cols="30" rows="10" placeholder="Ingresa el texto aquí"
+                oninput="soloMinusculas()"></textarea>
+        </div>
+
+        <div class="terminos">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Solo letras minúsculas y sin acento.</p>
+        </div>
+
+        <div class="botones">
+            <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+
+            <input type="button" class="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+        </div>
+
+        <div class="logo">
+            <img src="/IMG/Logo.png" alt="logo-alura">
+        </div>
+
+        <div class="encriptado">
+            <img id="muñeco" src="/IMG/Muñeco.png" alt="munheco">
+            <div id="mensaje_encriptado" class="mensaje_encriptado">
+                <h2>Ningun mensaje fue contrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+            </div class="mostrar" styles="display: none">
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+            <input id="btn-copiar" type="button" class="btn-copiar" value="Copiar" onclick="copiar()">
+        </div>
+    </div>
+
+    
+        <footer class="footer">
+            <h3>Pagina creada por Miguel Muñoz, Sigueme en redes :</h3>
+             <a href="https://github.com/miguelmunoz184?tab=repositories" target="_blank" ><i class="fa-brands fa-github fa-flip"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-mu%C3%B1oz-126561246/" target=" _blank"
+                rel="noopener noreferrer"><i class="fa-brands fa-linkedin fa-flip"></i></a>
+    
+    <script src="/JS/index.js"></script>
+
+
+</body>
+
+</html>
